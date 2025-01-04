@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .hidden {
+    transform: scale(0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .visible {
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: all;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  #tablet {
+    width: 90%;
+    height: 90%;
+    background-color: #222;
+    border: 10px solid #020202;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    display: flex;
+    overflow: hidden;
+  }
+
+  #sidebar {
+    width: 25%;
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  #category-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #category-list li {
+    background: #444;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  #category-list li:hover {
+    background: #555;
+    transform: scale(1.05);
+  }
+  
+  #main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  #content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  #position-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #position-list li {
+    background: #444;
+    color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #position-list li:hover {
+    background: #555;
+    transform: scale(1.02);
+  }  
+  
+  #footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #close-btn {
+    background: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  #close-btn:hover {
+    background: #666;
+    transform: scale(1.1);
+  }
+  
