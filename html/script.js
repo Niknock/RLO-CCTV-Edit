@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     hideTablet(); 
                     SetNuiFocus(false, false); 
                 }).catch((error) => {
-                    console.error("Error selecting position:", error);
                 });
             });
             positionList.appendChild(li);
